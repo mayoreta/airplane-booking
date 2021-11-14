@@ -15,6 +15,7 @@ const Color kGreenColor = Color(0xff0EC3AE);
 const Color kRedColor = Color(0xffEB70A5);
 const Color kBackgroundColor = Color(0xffFAFAFA);
 const Color kOrangeColor = Color(0xffFFA235);
+const Color kTransparentColor = Colors.transparent;
 
 // TextStyle
 TextStyle purpleTextStyle = GoogleFonts.poppins(

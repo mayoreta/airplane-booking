@@ -14,16 +14,16 @@ class BonusPage extends StatelessWidget {
           children: [
             cardSection(),
             infoSection(),
-            buttonSection(),
+            buttonSection(context),
           ],
         ),
       ),
     );
   }
 
-  ButtonCustom buttonSection() {
+  ButtonCustom buttonSection(BuildContext context) {
     return ButtonCustom(
-      action: () {},
+      action: () => Navigator.pushNamed(context, '/main'),
       margin: const EdgeInsets.only(top: 64),
       width: 220,
       text: 'Start Fly Now',
