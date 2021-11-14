@@ -15,7 +15,7 @@ class SignUpPage extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           children: [
             title(),
-            inputSection(),
+            inputSection(context),
             tacSection(),
           ],
         ),
@@ -34,7 +34,7 @@ class SignUpPage extends StatelessWidget {
     );
   }
 
-  Container inputSection() {
+  Container inputSection(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 30),
       padding: const EdgeInsets.symmetric(
@@ -68,7 +68,7 @@ class SignUpPage extends StatelessWidget {
             hintText: 'Your hobby',
           ),
           ButtonCustom(
-            action: () {},
+            action: () => Navigator.pushNamed(context, '/bonus'),
             text: 'Get Started',
           ),
         ],
